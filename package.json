@@ -1,0 +1,17 @@
+{
+  "name": "Chriate Test",
+  "version": "1.0.0",
+  "description": "A take home test my Chriate. Solution by Shaneel Kumar.",
+  "scripts": {
+    "watch:scss": "sass -w ./styles/style.scss ./styles/style.css",
+    "serve:html": "live-server --port=3100 --entry-file=./index.html",
+    "dev": "concurrently \"npm:watch:scss\" \"npm:serve:html\""
+  },
+  "author": "Shaneel Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.64.1"
+  }
+}

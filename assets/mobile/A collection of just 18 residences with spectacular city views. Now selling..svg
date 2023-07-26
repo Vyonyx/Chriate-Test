@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="308" height="177" viewBox="0 0 308 177">
+  <defs>
+    <filter id="A_collection_of_just_18_residences_with_spectacular_city_views._Now_selling." x="0" y="0" width="308" height="177" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#A_collection_of_just_18_residences_with_spectacular_city_views._Now_selling.)">
+    <text id="A_collection_of_just_18_residences_with_spectacular_city_views._Now_selling.-2" data-name="A collection of just 
+18 residences with spectacular city views. Now selling." transform="translate(15 15)" fill="#fff" font-size="26" font-family="WorkSans-Light, Work Sans" font-weight="300"><tspan x="25" y="24">A collection of just </tspan><tspan x="26" y="55.2">18 residences with </tspan><tspan x="2" y="86.4">spectacular city views. </tspan><tspan x="66" y="117.6">Now selling.</tspan></text>
+  </g>
+</svg>
