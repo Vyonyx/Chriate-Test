@@ -24,6 +24,11 @@ html *.container {
 }
 
 .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -47,6 +52,35 @@ html *.container {
 
     .desktop {
       display: flex;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media (min-width: $mobile-breakpoint) {
+    .mobile {
+      display: none;
+    }
+
+    .desktop.hero-image {
+      display: block;
+      background: black;
+      height: 100vh;
     }
   }
 }

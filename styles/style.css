@@ -152,6 +152,12 @@ html *.container {
   }
 }
 
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .navbar .container {
   display: flex;
   justify-content: space-between;
@@ -171,6 +177,31 @@ html *.container {
   }
   .navbar .desktop {
     display: flex;
+  }
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+.hero .hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.hero .desktop {
+  display: none;
+}
+@media (min-width: 420px) {
+  .hero .mobile {
+    display: none;
+  }
+  .hero .desktop.hero-image {
+    display: block;
+    background: black;
+    height: 100vh;
   }
 }
 
