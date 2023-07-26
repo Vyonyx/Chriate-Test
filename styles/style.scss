@@ -68,6 +68,39 @@ html *.container {
     z-index: -1;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 100vh;
+    padding: 60px 0;
+
+    .logo {
+      width: 160px;
+      height: 140px;
+    }
+
+    .hero-text {
+      max-width: 240px;
+      color: white;
+      font-weight: 300;
+      font-size: 26px;
+      text-align: center;
+      line-height: 32px;
+      margin-top: 80px;
+    }
+
+    .hero-register {
+      margin-top: 50px;
+      img {
+        width: 175px;
+        height: 40px;
+        margin: 0 auto;
+      }
+    }
+  }
+
   .desktop {
     display: none;
   }
@@ -81,6 +114,26 @@ html *.container {
       display: block;
       background: black;
       height: 100vh;
+    }
+
+    .container {
+      padding: 100px 0;
+
+      .logo {
+        width: 245px;
+        height: 206px;
+      }
+
+      .hero-text {
+        font-size: 40px;
+        line-height: 48px;
+        max-width: 624px;
+        margin-top: 80px;
+      }
+
+      .hero-register {
+        margin-top: 70px;
+      }
     }
   }
 }
