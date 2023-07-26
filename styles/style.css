@@ -142,9 +142,36 @@ body {
   background: #1b1b1b;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 280px;
+html *.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 375px) {
+  html *.container {
+    max-width: 280px;
+  }
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .mobile {
+  display: flex;
+  margin-top: 24px;
+}
+.navbar .desktop {
+  display: none;
+  margin-top: 50px;
+}
+@media (min-width: 375px) {
+  .navbar .mobile {
+    display: none;
+  }
+  .navbar .desktop {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

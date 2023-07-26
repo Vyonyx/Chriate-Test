@@ -1,6 +1,11 @@
 @import "./reset.scss";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
 
+// Variables
+$mobile-breakpoint: 375px;
+$desktop-breakpoint: 1440px;
+
+// Styling
 html {
   font-family: "Work Sans", sans-serif;
 }
@@ -9,7 +14,39 @@ body {
   background: #1b1b1b;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 280px;
+html *.container {
+  @media (max-width: $mobile-breakpoint) {
+    max-width: 280px;
+  }
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile {
+    display: flex;
+    margin-top: 24px;
+  }
+
+  .desktop {
+    display: none;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $mobile-breakpoint) {
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: flex;
+    }
+  }
 }
