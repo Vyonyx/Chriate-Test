@@ -1,11 +1,11 @@
 @import "./reset.scss";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
 
-// Variables
+//--------Global Variables--------//
 $mobile-breakpoint: 420px;
 $desktop-breakpoint: 1440px;
 
-// Styling
+//--------Global Styling--------//
 html {
   font-family: "Work Sans", sans-serif;
 }
@@ -23,6 +23,8 @@ html *.container {
   padding-right: 0;
 }
 
+//--------Module Styling--------//
+//--------Navbar--------//
 .navbar {
   position: absolute;
   top: 0;
@@ -56,6 +58,7 @@ html *.container {
   }
 }
 
+//--------Hero Section--------//
 .hero {
   position: relative;
   min-height: 100vh;
@@ -134,6 +137,82 @@ html *.container {
       .hero-register {
         margin-top: 70px;
       }
+    }
+  }
+}
+
+//--------Details Section--------//
+.details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #1b3534;
+  margin: 0 auto;
+  overflow-y: hidden;
+  background: #ebe6de;
+
+  .detail-text {
+    $gap-mobile: 30px;
+    margin-bottom: 320px;
+
+    .heading {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px;
+      margin-bottom: $gap-mobile;
+    }
+
+    .description {
+      margin-bottom: $gap-mobile;
+      p + p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .mobile.detail-image {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    mix-blend-mode: multiply;
+  }
+
+  .desktop.detail-image {
+    display: none;
+  }
+
+  @media (min-width: $mobile-breakpoint) {
+    $gap-desktop: 50px;
+    .mobile {
+      display: none;
+    }
+
+    .detail-text {
+      max-width: 450px;
+      margin: 100px 0;
+      margin-left: 50%;
+
+      .heading {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: $gap-desktop;
+      }
+
+      .description {
+        margin-bottom: $gap-desktop;
+      }
+    }
+
+    .desktop.detail-image {
+      display: inline;
+      position: absolute;
+      bottom: -250px;
+      left: 0;
     }
   }
 }
