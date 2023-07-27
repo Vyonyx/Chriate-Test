@@ -179,6 +179,21 @@ html *.container {
 
     .register {
       z-index: 20;
+      color: #545554;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      letter-spacing: 2.5px;
+      width: 175px;
+      height: 40px;
+      border: 1px solid #545554;
+      padding: 10px 20px;
+
+      &:hover {
+        background: #545554;
+        color: white;
+      }
     }
   }
 
