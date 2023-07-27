@@ -5,6 +5,25 @@
 $mobile-breakpoint: 420px;
 $desktop-breakpoint: 1440px;
 
+//--------Mixins--------//
+@mixin register-btn($bg-color: transparent, $color: white, $hover-text: black) {
+  z-index: 20;
+  color: $color;
+  background: $bg-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  border: 1px solid $color;
+  padding: 10px 20px;
+
+  &:hover {
+    color: $hover-text;
+    background: $color;
+  }
+}
+
 //--------Global Styling--------//
 html {
   font-family: "Work Sans", sans-serif;
@@ -58,6 +77,10 @@ html *.container {
 
     .desktop {
       display: flex;
+
+      a.register-link {
+        @include register-btn;
+      }
     }
   }
 }
@@ -99,12 +122,8 @@ html *.container {
     }
 
     .hero-register {
+      @include register-btn;
       margin-top: 50px;
-      img {
-        width: 175px;
-        height: 40px;
-        margin: 0 auto;
-      }
     }
   }
 
@@ -178,13 +197,9 @@ html *.container {
     }
 
     .register {
-      z-index: 20;
+      @include register-btn;
       color: #545554;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 400;
       line-height: 16.8px;
-      letter-spacing: 2.5px;
       width: 175px;
       height: 40px;
       border: 1px solid #545554;
@@ -328,15 +343,13 @@ html *.container {
 }
 
 .register-submit-btn {
-  cursor: pointer;
+  @include register-btn;
   margin: 55px auto;
+  cursor: pointer;
   color: white;
   background: #1b3534;
   border: 1px solid #1b3534;
-  padding: 10px 45px;
-  font-size: 14px;
-  line-height: 16.8px;
-  letter-spacing: 2.8px;
+  width: 175px;
 
   &:hover {
     border: 1px solid #1b3534;

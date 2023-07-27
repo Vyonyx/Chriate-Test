@@ -181,6 +181,22 @@ html *.container {
   .navbar .desktop {
     display: flex;
   }
+  .navbar .desktop a.register-link {
+    z-index: 20;
+    color: white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+  }
+  .navbar .desktop a.register-link:hover {
+    color: black;
+    background: white;
+  }
 }
 
 .hero {
@@ -216,12 +232,21 @@ html *.container {
   margin-top: 80px;
 }
 .hero .container .hero-register {
+  z-index: 20;
+  color: white;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 20px;
   margin-top: 50px;
 }
-.hero .container .hero-register img {
-  width: 175px;
-  height: 40px;
-  margin: 0 auto;
+.hero .container .hero-register:hover {
+  color: black;
+  background: white;
 }
 .hero .desktop {
   display: none;
@@ -283,16 +308,25 @@ html *.container {
 }
 .details .detail-text .register {
   z-index: 20;
-  color: #545554;
-  text-decoration: none;
+  color: white;
+  background: transparent;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
   letter-spacing: 2.5px;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: #545554;
+  line-height: 16.8px;
   width: 175px;
   height: 40px;
   border: 1px solid #545554;
   padding: 10px 20px;
+}
+.details .detail-text .register:hover {
+  color: black;
+  background: white;
 }
 .details .detail-text .register:hover {
   background: #545554;
@@ -412,15 +446,26 @@ html *.container {
 }
 
 .register-submit-btn {
-  cursor: pointer;
+  z-index: 20;
+  color: white;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 20px;
   margin: 55px auto;
+  cursor: pointer;
   color: white;
   background: #1b3534;
   border: 1px solid #1b3534;
-  padding: 10px 45px;
-  font-size: 14px;
-  line-height: 16.8px;
-  letter-spacing: 2.8px;
+  width: 175px;
+}
+.register-submit-btn:hover {
+  color: black;
+  background: white;
 }
 .register-submit-btn:hover {
   border: 1px solid #1b3534;
