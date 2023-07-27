@@ -421,5 +421,18 @@ html *.container {
     padding-top: 100px;
   }
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  color: white;
+  background: #8a8889;
+  font-size: 10px;
+  text-align: center;
+}
+footer span {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
