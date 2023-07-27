@@ -387,7 +387,7 @@ html *.container {
   margin: 55px auto;
   color: white;
   background: #1b3534;
-  border: none;
+  border: 1px solid #1b3534;
   padding: 10px 45px;
   font-size: 14px;
   line-height: 16.8px;
