@@ -258,6 +258,14 @@ html *.container {
   &::placeholder {
     color: #1b3534;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    color: #d9ead2;
+  }
 }
 
 .select-control {
@@ -289,6 +297,10 @@ html *.container {
     line-height: 21px;
     padding-bottom: 20px;
     margin: 25px 0;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 

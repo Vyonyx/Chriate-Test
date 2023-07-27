@@ -351,6 +351,12 @@ html *.container {
 .control-col input::placeholder {
   color: #1b3534;
 }
+.control-col input:focus {
+  outline: none;
+}
+.control-col input:focus::placeholder {
+  color: #d9ead2;
+}
 
 .select-control {
   cursor: pointer;
@@ -380,6 +386,9 @@ html *.container {
   line-height: 21px;
   padding-bottom: 20px;
   margin: 25px 0;
+}
+.select-control select:focus {
+  outline: none;
 }
 
 .register-submit-btn {
