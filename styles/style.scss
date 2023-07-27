@@ -35,6 +35,10 @@ html *.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a {
+      z-index: 20;
+    }
   }
 
   .mobile {
@@ -171,6 +175,10 @@ html *.container {
       p + p {
         margin-top: 20px;
       }
+    }
+
+    .register {
+      z-index: 20;
     }
   }
 

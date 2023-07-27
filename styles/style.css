@@ -163,6 +163,9 @@ html *.container {
   justify-content: space-between;
   align-items: center;
 }
+.navbar .container a {
+  z-index: 20;
+}
 .navbar .mobile {
   display: flex;
   margin-top: 24px;
@@ -277,6 +280,9 @@ html *.container {
 }
 .details .detail-text .description p + p {
   margin-top: 20px;
+}
+.details .detail-text .register {
+  z-index: 20;
 }
 .details .mobile.detail-image {
   position: absolute;
